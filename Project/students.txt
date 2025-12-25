@@ -1,0 +1,6 @@
+ID : 1, Full Name : koko
+, Age: 23, Total Marks : 400.00, Average : 100.00, Grade : A
+ID : 2, Full Name : lolo
+, Age: 23, Total Marks : 156.00, Average : 39.00, Grade : F
+ID : 1, Full Name : passant
+, Age: 18, Total Marks : 123.00, Average : 30.75, Grade : F

@@ -1,4 +1,4 @@
-//Created by Passant Ibrahim & Bassant Hussien 
+///////////////// made by Passant Rashed & Bassant Hussein \\\\\\\\\\\\\\\\\\\\\
 
 #include <stdio.h>
 #include <ctype.h>
@@ -97,7 +97,7 @@ int main(void) {
 
         case 6:
             if (size > 0) {
-                createOrAppendFile(students,size);
+                createOrAppendFile(students, size);
                 printf("Saved last entry to file.\n");
             }
             else {
@@ -117,10 +117,11 @@ int main(void) {
 
         case 9:
             printf("Exiting program...\n");
+            printf("Bye :))))))\n");
             break;
 
         default:
-            printf("Invalid choice! Please enter 1–9.\n");
+            printf("Invalid choice! Please enter 1â€“9.\n");
         }
 
         printf("\n");
@@ -161,12 +162,13 @@ void enter_student_info(struct Student students[], int size) {
 }
 
 void display_all_students(struct Student students[], int size) {
-    printf("\n============================================================\n");
-    printf(" ID\tName\t\tAge\tMarks\tAverage\tGrade\n");
-    printf("============================================================\n");
+    printf("\n===============================================================\n");
+    printf("%-6s %-10s %-6s %-10s %-10s %-6s\n",
+        "ID", "Name", "Age", "Marks", "Average", "Grade");
+    printf("===============================================================\n");
 
     for (int i = 0; i < size; i++) {
-        printf("%d\t%-15s\t%d\t%.2f\t%.2f\t%c\n",
+        printf("%-6d %-20s %-6d %-10.2f %-10.2f %-6c\n",
             students[i].student_id,
             students[i].full_name,
             students[i].age,
@@ -175,8 +177,10 @@ void display_all_students(struct Student students[], int size) {
             students[i].grade);
     }
 
-    printf("Number of students = %d\n============================================================\n", size);
+    printf("===============================================================\n");
+    printf("Number of students = %d\n", size);
 }
+
 
 float calculateAverage(struct Student student) {
     return student.total_marks / 4.0;
@@ -403,10 +407,11 @@ void updateStudent(struct Student* ptr, int size)
                 printf("exit update ^-^ ");
                 break;
             default:
-                printf("Invalid choice! Please enter 1–3.\n");
+                printf("Invalid choice! Please enter 1â€“3.\n");
             }
         }
     }
 
 
 }
+///////////////// made by Passant Rashed & Bassant Hussein \\\\\\\\\\\\\\\\\\\\\
